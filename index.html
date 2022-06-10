@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+        }
+        .startWrap{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(187, 234, 249);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            transition: 1s;
+        }
+        .bukva{
+            width: 60px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            font-family: 'Work Sans', sans-serif;
+            transition: 1s;
+            color: rgb(31, 38, 70);
+        }
+        .M{
+            margin-top: 1000px;
+        }
+
+        .T{
+            margin-top: 1000px;
+        }
+
+        .R{
+            margin-top: 1000px;
+        }
+
+        .r{
+            margin-top: -1000px;
+        }
+        .o{
+            margin-top: -1000px;
+        }
+        .t{
+            margin-top: -1000px;
+        }
+        .bgimage{
+            width: 100%;
+            height: 100vh;
+            background-image: url(Bmu434edDxw5ANQ2CJxP65-1200-80.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        
+        }
+
+        .wrap{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        
+        }
+
+        .hellopage{
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .header{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color:rgb(187, 234, 249) ;
+            font-family: 'Work Sans', sans-serif;
+        }
+        .logoTort{
+            width: 180px;
+            height: 180px;
+            border: 12px solid  rgb(187, 234, 249);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 120px;
+            font-family: 'Work Sans', sans-serif;
+            color: rgb(187, 234, 249);
+
+        }
+        .page{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .startbut{
+            width: 30%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            text-decoration: none;
+            color:rgb(187, 234, 249) ;
+        }
+        .startbutA{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            text-decoration: none;
+            color:rgb(187, 234, 249) ;
+        }
+        .addons{
+            width: 40%;
+            height: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn{
+            width: 20%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border: none;
+            background-color: rgba(240, 248, 255, 0);
+            color: rgb(187, 234, 249);
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .title{
+            width: 50%;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        .ebalo{
+            width: 100px;
+            height: 100px;
+            background-image: url(b2c96cfb783ab5b44d4431a2932cc3c9.jpg);
+            background-size: cover;
+            border-radius: 50%;
+        }
+        h2{
+            font-size: 40px;
+            font-family: 'Work Sans', sans-serif;
+            color: rgb(31, 38, 70);
+        }
+        .txt{
+            width: 80%;
+            height: 400px;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Work Sans', sans-serif;
+        }
+        h3{
+            font-size: 40px;
+            font-family: 'Work Sans', sans-serif;
+            color: rgb(31, 38, 70);
+        }
+        .galery{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+        .n1{
+            background-image: url(9f5a5b7f6057aa03867430389ce73f94.jpg);
+        }
+        .n2{
+            background-image: url(093bb0b99bbf41b075db56db627c0714.jpg);
+        }
+        .n3{
+            background-image: url(679d679e9bd646f9ffddab647e158415.jpg);
+        }
+
+        .p1{
+            background-image: url(bg1.png);
+            background-size: cover;
+            color: rgb(31, 38, 70);
+        }
+        .p2{
+            background-image: url(bg2.png);
+            background-size: cover;
+            color: rgb(31, 38, 70);
+        }
+        .p3{
+            flex-direction: row;
+            color: rgb(31, 38, 70);
+        }
+        .p4{
+            flex-direction: row;
+            background-image: url(bg2.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(31, 38, 70);
+        }
+        .p5{
+            flex-direction: row;
+            color: rgb(31, 38, 70);
+        }
+        .p6{
+            background-color:rgb(159, 216, 252);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(31, 38, 70);
+        }
+
+        .foto{
+            width: 50%;
+            height: 100vh;
+            background-image: url(1583478478_webprogr-1.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            font-family: 'Work Sans', sans-serif;
+        }
+        .info{
+            width: 50%;
+            height: 100vh;
+            background-image: url(bg3.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(31, 38, 70);
+        }
+        h4{
+            font-size: 40px;
+            font-family: 'Work Sans', sans-serif;
+            margin-bottom: 20px;
+            color: rgb(31, 38, 70);
+        }
+        h5{
+            font-size: 40px;
+            font-family: 'Work Sans', sans-serif;
+            margin-bottom: 20px;
+            color: rgb(31, 38, 70);
+        }
+        h6{
+            font-size: 40px;
+            font-family: 'Work Sans', sans-serif;
+            margin-bottom: 20px;
+            color: rgb(31, 38, 70);
+        }
+        .worktxt{
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-family: 'Work Sans', sans-serif;
+            background-image: url(bg4.png);
+            background-size: cover;
+        }
+        .works{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+        .row1{
+            width: 100%;
+            height: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .row2{
+            width: 100%;
+            height: 35%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .row3{
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .job1{
+            width: 30%;
+            height: 100%;
+            background-image: url(1000_545_1591856276-6400.png);
+            background-size: cover;
+        }
+        .job2{
+            width: 40%;
+            height: 100%;
+            background-image: url(dash.jpg);
+            background-size: cover;
+        }
+        .job3{
+            width: 30%;
+            height: 100%;
+            background-image: url(cat.jpg);
+            background-size: cover;
+        }
+        .job4{
+            width: 35%;
+            height: 100%;
+            background-image: url(dream-paradise-fantasy-world-KroM-1024x576-MM-90.png);
+            background-size: cover;
+        }
+        .job5{
+            width: 40%;
+            height: 100%;
+            background-image: url(Cooking.jpeg);
+            background-size: cover;
+        }
+        
+        .job6{
+            width: 35%;
+            height: 100%;
+            background-image: url(maxresdefault.jpg);
+            background-size: cover;
+        }
+        .job7{
+            width: 25%;
+            height: 100%;
+            background-image: url(cornell_method_note-taking.png.png);
+            background-size: cover;
+        }
+        .job8{
+            width: 25%;
+            height: 100%;
+            background-image: url(gg.png);
+            background-size: cover;
+        }
+        .job9{
+            width: 25%;
+            height: 100%;
+            background-image: url(Blog-10-essential-reads-to-improve-reading-comprehension.jpg);
+            background-size: cover;
+        }
+        .job10{
+            width: 25%;
+            height: 100%;
+            background-image: url(optimize.png);
+            background-size: cover;
+        
+        }
+
+        .blur{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(60, 191, 221, 0.4);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="startWrap" id="stwr">
+        <div class="bukva M" id="s1">M</div>
+        <div class="bukva r" id="s2">r</div>
+        <div class="bukva T" id="s3">T</div>
+        <div class="bukva o" id="s4">o</div>
+        <div class="bukva R" id="s5">r</div>
+        <div class="bukva t" id="s6">t</div>
+    </div>
+    <div class="bgimage">
+        <div class="wrap">
+            <div class="header">
+                <div class="startbut">
+                    <a href="https://youtu.be/dQw4w9WgXcQ"class="startbutA">
+                        Mr Tort
+                </a>
+                </div>
+                <div class="addons">
+                    <button class="btn aboutme" onclick="Smoothone()">about me</button>
+                    <button class="btn myskils" onclick="Smoothtwo()">my skils</button>
+                    <button class="btn myworks" onclick="Smooththree()">my works</button>
+                </div>
+            </div>
+            <div class="hellopage">
+                <div class="logoTort">
+                     M 
+                    </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="page p1">
+        <div class="title">
+            <div class="ebalo"></div>
+            <h2>About me</h2>
+        </div>
+        <div class="txt">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio voluptate nostrum eius, neque, hic similique doloribus voluptatem aliquam illum eos a et modi laudantium asperiores autem tenetur eveniet iste maiores nesciunt temporibus, assumenda praesentium est harum. Ab itaque inventore repellat officia. Optio similique voluptatem incidunt saepe recusandae nemo eligendi error facilis sequi earum cum ut inventore, iste temporibus, quas distinctio fugit, consectetur impedit? Ipsa optio repellendus similique minima ab eos repellat dolorem odit quam esse dolore, iusto ipsum alias labore enim fugit, modi vitae! Laudantium, tenetur commodi mollitia esse eos excepturi! Numquam iure voluptate minus, nihil quo laborum cumque, quia fuga vitae sunt soluta aliquam suscipit dicta est optio. Facilis error est aliquam eaque debitis aliquid aut dolores a quae distinctio fugiat perspiciatis maiores magnam officia hic eos nam consequatur, doloremque enim obcaecati. Nobis numquam suscipit laboriosam est non harum velit eum voluptas ducimus optio! Quam a modi, aliquid eaque sit cupiditate quod ex veniam cumque, pariatur nesciunt perferendis odio corrupti ea beatae perspiciatis illum laborum repellat expedita. Ratione est optio, veniam quasi debitis incidunt harum, neque maiores, doloremque nisi quam soluta! Harum, atque aliquam. Cumque dolor explicabo quidem adipisci, omnis animi perspiciatis numquam corporis ad quam voluptate, accusamus, eos mollitia sint laborum hic non facilis nulla sapiente praesentium et? Explicabo eius repudiandae placeat enim porro maiores iusto adipisci et consequatur soluta voluptatum quaerat esse, rem molestiae nobis atque, ea quae ducimus eum distinctio quas quam facere. Non, voluptate. Itaque culpa excepturi aperiam quod, doloribus quia enim, voluptatibus dolor, ipsum impedit dignissimos quam. Dignissimos facilis vitae dolores fugit cupiditate, minus reprehenderit facere nisi non quae, perferendis est ad minima, modi qui molestias asperiores! Eum nemo quibusdam debitis quaerat? Impedit doloremque quaerat, natus necessitatibus ducimus vero illum et, exercitationem fuga, ut asperiores magni expedita rerum cupiditate ea suscipit neque. Impedit.
+        </div>
+    </div>
+    <div class="page p2">
+        <div class="title">
+            <div class="galery">
+                <div class="ebalo n1"></div>
+                <div class="ebalo n2"></div>
+                <div class="ebalo n3"></div>
+            </div>
+            <h3>My friends</h3>
+        </div>
+        <div class="txt">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi alias ullam enim cumque facilis quo nobis ipsam atque porro sit? Tenetur iure natus asperiores et adipisci, dignissimos, repellendus odio quas quasi enim facilis consectetur. Accusamus, earum culpa molestias qui sed ut delectus id repellat et facere illo nesciunt deleniti alias assumenda nam a laborum cupiditate distinctio non quo? In alias illo autem, minus soluta eos ducimus dignissimos officia quisquam sit aut incidunt ratione sequi impedit placeat labore iure nihil quia similique, minima totam praesentium! Necessitatibus hic, pariatur eligendi suscipit incidunt eos commodi sed odit aliquam aliquid laudantium illo voluptatibus ab numquam nam quod vitae quos recusandae quidem neque, dolor, laborum enim. Animi, vitae? Fuga unde explicabo maiores. Illum animi excepturi quaerat sapiente laborum fugit dolores labore repellendus maiores atque molestias quidem eius culpa, dolorum omnis tempore dolore aut dignissimos nesciunt pariatur porro quisquam eaque alias ad! Dolorem dicta neque debitis, modi qui ea, dolores rem tenetur perspiciatis voluptatum maxime illo fugiat, nihil ab consequuntur eius fugit id aspernatur maiores distinctio ratione facilis! Quisquam modi tempora atque optio nam iusto dicta consequatur quae doloribus ut, est facilis quia quod asperiores totam vel amet eaque consequuntur! Ad ipsum totam quos pariatur consequuntur recusandae suscipit aliquid quis autem voluptatibus eum nulla commodi rem repellat, deleniti quasi eligendi. Vitae rerum cum ullam quidem molestiae. Aliquid, vel ad! Obcaecati perspiciatis quod quam, maxime nesciunt, illum deserunt eum cum molestiae aliquam id esse laborum quibusdam ut. Animi delectus accusantium, voluptatem impedit nobis eaque voluptatum quia! Illum distinctio odio veniam. Neque itaque quis quaerat cum veritatis quae et facere laborum officia consequatur, asperiores rem obcaecati, modi, labore commodi exercitationem sapiente? Dicta veniam sed, dolorem a perspiciatis eum fuga tenetur deleniti soluta voluptatum reprehenderit molestiae sapiente maiores temporibus tempore nostrum, aspernatur quae? Eius ducimus mollitia eos labore quisquam id. Sapiente odit at cupiditate exercitationem, temporibus, quo incidunt sunt molestiae tempore, illo itaque dolore. Molestiae laborum eveniet sed quisquam consequatur numquam at sapiente, praesentium dignissimos facere quibusdam ad cumque ea itaque beatae iusto veniam eligendi aut labore culpa provident maxime natus? Odit nulla explicabo accusamus quo exercitationem officia facere doloremque corporis. Quae veniam ratione aut mollitia dolorum nostrum laboriosam quod magnam omnis ipsum enim, tenetur exercitationem illum magni quas sed ducimus voluptatibus repellendus sapiente nemo? Officiis, repudiandae dolore. Quaerat quia consequatur nesciunt repellendus voluptatum, quam labore voluptas debitis hic eveniet consectetur beatae cupiditate delectus consequuntur ipsa dolore nisi dolores.
+        </div>
+        
+    </div>
+    <div class="page p3">
+        <div class="foto">
+            <div class="blur"></div>
+        </div>
+        <div class="info">
+            <h4>My skils</h4>
+            <div class="txt">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti pariatur dolorem laboriosam ea asperiores explicabo nulla doloribus maiores quis eaque modi beatae et libero ducimus aut quasi, totam eum amet rerum placeat? Exercitationem voluptatem id similique harum, libero nam molestias odit recusandae soluta. Explicabo, consequuntur. Saepe, deserunt doloremque nulla sunt harum odio vitae animi rerum quasi, exercitationem fugiat iusto aspernatur eligendi corporis. Iste temporibus earum distinctio aspernatur! Perferendis corporis minima, necessitatibus ratione, veniam in cum exercitationem deserunt, rerum quisquam fuga! Accusamus laborum esse, porro at consequatur ea impedit! Dolorum quae corporis aliquid atque illo aut, adipisci laborum magnam exercitationem ex accusamus, expedita nihil quia! Aliquam dolorem deleniti aspernatur. Recusandae eos repellat minus corporis reprehenderit deserunt, esse, est iusto accusamus illum voluptatum sequi. Molestias, quaerat! Id perferendis, vitae sint amet cumque illum nulla! Atque illo quis, veniam laborum maxime officia doloribus ea aliquam consequuntur recusandae et beatae ipsum aperiam ullam error explicabo id perspiciatis ex autem esse necessitatibus? Beatae dicta maiores saepe vitae aspernatur veniam, sed cum labore incidunt quaerat tempora consequuntur architecto voluptatibus voluptas odio deserunt, optio, in natus quibusdam autem debitis provident culpa nam? Accusamus autem impedit cumque iure explicabo. Iusto ipsam dolores aut nostrum, quaerat animi repudiandae odit!
+            </div>
+        </div>
+    </div>
+    <div class="page p4">
+        <h5>Html , css</h5>
+            <div class="txt">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae perferendis ab, ex atque, doloremque eum deleniti velit quis repellat quisquam eligendi rerum ducimus facere autem molestias, error magnam nam? Sunt consectetur quam earum quibusdam expedita eveniet dignissimos vel doloribus ut inventore. Ab consectetur hic possimus ratione voluptatum, nihil eligendi ipsum, quisquam recusandae sequi cumque autem. Voluptatem praesentium quam veritatis totam pariatur maiores voluptatibus ab, ducimus, aperiam odio sapiente autem! Sequi cum temporibus quos in. Molestias commodi iusto maxime eligendi veritatis accusantium quia perspiciatis assumenda earum at tenetur, ab amet magnam quaerat perferendis. Libero, natus nihil. Impedit non ullam assumenda eos, delectus dignissimos illo autem, optio sint cumque dolorem, incidunt repellat aliquid facilis temporibus nisi? Soluta et aut nemo eos quibusdam ut. Non rem ullam quasi recusandae impedit consectetur molestiae exercitationem voluptatum repellat atque nemo at, totam est ipsa ducimus explicabo nulla mollitia labore quo reiciendis, sapiente voluptates itaque. Atque dolorum facilis animi accusantium commodi voluptatum alias qui vero suscipit officia consequuntur quis iste consequatur est maxime, placeat sapiente ad autem cupiditate perferendis laudantium fugiat asperiores? Optio asperiores maxime nostrum tempore, nobis molestiae placeat! Fugit cum at ipsam sed delectus possimus exercitationem illo, reiciendis unde quos provident officiis sapiente beatae ratione sequi, dignissimos quae, expedita atque porro blanditiis a. Ex, pariatur quia? Accusamus eligendi fuga laborum a. Doloremque fugit odit voluptatem. Sed facilis ullam reprehenderit, reiciendis dicta modi, neque laudantium odit aperiam vitae expedita nulla ut nihil. Sit architecto quibusdam alias magni beatae neque eveniet illo vero, officiis reiciendis nihil, ipsum qui nisi tenetur magnam quisquam eius dolorem quis placeat recusandae. Deserunt numquam iusto ad, cupiditate ullam facere quis, molestias fuga delectus natus, quae libero odio! Cum, soluta minima necessitatibus culpa excepturi autem accusamus placeat magni numquam laboriosam tempora? Facilis non quisquam magni similique at fugit esse nisi accusantium? Corporis, fugiat porro? Ad laudantium voluptate, repellendus debitis eos nemo aspernatur magnam voluptates officia, assumenda mollitia tempore neque ipsa sint eius fuga quia quae? Facilis tenetur optio repellendus ea quae recusandae nulla laborum rerum voluptatem est exercitationem odit veniam repellat libero soluta fugiat, velit aut ab? Consequatur reprehenderit eveniet culpa doloribus tenetur nostrum accusantium officia ipsa asperiores obcaecati quia repellendus repellat labore totam maxime nemo, id velit vero tempore alias. Expedita doloribus quam similique, consectetur cum natus velit iste. Veniam qui odio maiores. Reprehenderit suscipit natus voluptatem est, illum quia? Ab nesciunt repellendus voluptas, inventore fugiat ipsum quisquam esse ipsa consequatur eius.
+            </div>
+
+    </div>
+    <div class="page p5">
+        <div class="info">
+            <h6>Js</h6>
+            <div class="txt">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti pariatur dolorem laboriosam ea asperiores explicabo nulla doloribus maiores quis eaque modi beatae et libero ducimus aut quasi, totam eum amet rerum placeat? Exercitationem voluptatem id similique harum, libero nam molestias odit recusandae soluta. Explicabo, consequuntur. Saepe, deserunt doloremque nulla sunt harum odio vitae animi rerum quasi, exercitationem fugiat iusto aspernatur eligendi corporis. Iste temporibus earum distinctio aspernatur! Perferendis corporis minima, necessitatibus ratione, veniam in cum exercitationem deserunt, rerum quisquam fuga! Accusamus laborum esse, porro at consequatur ea impedit! Dolorum quae corporis aliquid atque illo aut, adipisci laborum magnam exercitationem ex accusamus, expedita nihil quia! Aliquam dolorem deleniti aspernatur. Recusandae eos repellat minus corporis reprehenderit deserunt, esse, est iusto accusamus illum voluptatum sequi. Molestias, quaerat! Id perferendis, vitae sint amet cumque illum nulla! Atque illo quis, veniam laborum maxime officia doloribus ea aliquam consequuntur recusandae et beatae ipsum aperiam ullam error explicabo id perspiciatis ex autem esse necessitatibus? Beatae dicta maiores saepe vitae aspernatur veniam, sed cum labore incidunt quaerat tempora consequuntur architecto voluptatibus voluptas odio deserunt, optio, in natus quibusdam autem debitis provident culpa nam? Accusamus autem impedit cumque iure explicabo. Iusto ipsam dolores aut nostrum, quaerat animi repudiandae odit!
+            </div>
+        </div>
+        <div class="foto">
+            <div class="blur"></div>
+        </div>
+    </div>
+    <div class="page p6">
+        <div class="worktxt">
+            My work
+        </div>
+        <div class="works">
+            <div class="row1">
+                <a class="job1" href="https://mrtort54.github.io/pizza/">
+                </a>
+                <a class="job2" href="https://mrtort54.github.io/dashboard1/">
+                </a>
+                <a class="job3" href=" https://mrtort54.github.io/Catland.com/">
+                </a>
+            </div>
+            <div class="row2">
+                <a class="job4" href="https://mrtort54.github.io/clickerGame2.0/">
+                </a>
+                <a class="job5" href="https://mrtort54.github.io/cooks/">
+                </a>
+                <a class="job6" href="https://mrtort54.github.io/weather2.0/">
+                </a>
+            </div>
+            <div class="row3">
+                <a class="job7" href="https://mrtort54.github.io/notatick/">
+                </a>
+                <a class="job8" href=" https://mrtort54.github.io/game/">
+                </a>
+                <a class="job9" href="https://mrtort54.github.io/read/">
+                </a>
+                <a class="job10" href="https://mrtort54.github.io/klava/">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        setInterval(function(){
+            s1.style.marginTop =0+'px'
+            setInterval(function(){
+                s2.style.marginTop =0+'px'
+                setInterval(function(){
+                    s3.style.marginTop =0+'px'
+                    setInterval(function(){
+                        s4.style.marginTop =0+'px'
+                        setInterval(function(){
+                            s5.style.marginTop =0+'px'
+                            setInterval(function(){
+                                s6.style.marginTop =0+'px'
+                                setInterval(function(){
+                                    s1.style.color = 'rgb(187, 234, 249,0)'
+                                    s2.style.color = 'rgb(187, 234, 249,0)'
+                                    s3.style.color = 'rgb(187, 234, 249,0)'
+                                    s4.style.color = 'rgb(187, 234, 249,0)'
+                                    s5.style.color = 'rgb(187, 234, 249,0)'
+                                    s6.style.color = 'rgb(187, 234, 249,0)'
+                                    stwr.style.backgroundColor = 'rgb(187, 234, 249,0)'
+                                        setInterval(function(){
+                                            stwr.style.display = 'none'
+                                            document.body.style.overflow = 'auto'
+                                    },1400)
+                                },1400)
+                            },500)
+                        },500)
+                    },500)
+                },500)
+            },500)
+        },500)
+
+
+        function Smoothone(){
+            window.scrollTo({
+                top: 765 ,
+                behavior: "smooth",
+           });
+     
+        }
+
+        function Smoothtwo(){
+            window.scrollTo({
+                top: 2285 ,
+                behavior: "smooth",
+           });
+     
+        }
+
+        function Smooththree(){
+            window.scrollTo({
+                top: 4800 ,
+                behavior: "smooth",
+           });
+     
+        }
+    </script>
+</body>
+</html>
